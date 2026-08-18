@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="meta.contact_title">Contact &amp; Programări | Atelier by Daniela — Studio de Dermopigmentare</title>
+<meta name="description" data-i18n-content="meta.contact_description" content="Programează-te la Atelier by Daniela. Telefon, email, adresă și program.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="logo">Atelier by Daniela<span data-i18n="common.logo_sub">Studio de Dermopigmentare</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav.home">Acasă</a></li>
+      <li><a href="sprancene.html" data-i18n="nav.sprancene">Sprâncene</a></li>
+      <li><a href="gene.html" data-i18n="nav.gene">Gene</a></li>
+      <li><a href="buze.html" data-i18n="nav.buze">Buze</a></li>
+      <li><a href="eyeliner.html" data-i18n="nav.eyeliner">Eyeliner</a></li>
+      <li><a href="galerie.html" data-i18n="nav.galerie">Galerie</a></li>
+      <li><a href="preturi.html" data-i18n="nav.preturi">Prețuri</a></li>
+      <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <span class="nav-phone">0722 864 903</span>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="ro">RO</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="it">IT</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary" data-i18n="nav.cta">Programează-te</a>
+    </div>
+    <button class="menu-toggle" aria-label="Meniu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="hero" style="padding:60px 0 40px;">
+  <div class="container" style="display:block; text-align:center;">
+    <span class="eyebrow" data-i18n="contact.hero_eyebrow">Contact</span>
+    <h1 data-i18n="contact.hero_title">Hai să vorbim despre trăsătura ta perfectă</h1>
+    <p class="lead" style="margin:18px auto 0;" data-i18n="contact.hero_lead">Completează formularul sau scrie-ne direct — răspundem cât mai curând posibil pentru a stabili o consultație.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="contact-info-card">
+          <ul class="contact-list">
+            <li>
+              <span class="ic">☎</span>
+              <div><strong data-i18n="contact.phone_label">Telefon</strong><span>0722 864 903</span></div>
+            </li>
+            <li>
+              <span class="ic">✉</span>
+              <div><strong data-i18n="contact.email_label">Email</strong><span>studioatelierdaniela@gmail.com</span></div>
+            </li>
+            <li>
+              <span class="ic">📍</span>
+              <div><strong data-i18n="contact.address_label">Adresă</strong><span>Popești Leordeni, Strada Biruinței 30-57, bloc 3, scara 1, parter</span></div>
+            </li>
+            <li>
+              <span class="ic">🕐</span>
+              <div><strong data-i18n="contact.schedule_label">Program</strong><span data-i18n="common.footer_schedule">Luni–Sâmbătă: 10.00–20.00</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="map-placeholder placeholder-img"><span data-i18n="contact.map_label">Hartă locație</span><small data-i18n="contact.map_sub">[embed hartă aici]</small></div>
+      </div>
+
+      <div class="form-card">
+        <h3 data-i18n="contact.form_title">Formular de programare</h3>
+        <p style="color:var(--color-text-soft); font-size:0.9rem; margin-bottom:24px;" data-i18n="contact.form_note">Formularul este momentan doar demonstrativ — nu trimite date către niciun server.</p>
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="field">
+              <label for="nume" data-i18n="contact.field_name">Nume complet</label>
+              <input type="text" id="nume" name="nume" data-i18n-placeholder="contact.field_name_placeholder" placeholder="Numele tău" required>
+            </div>
+            <div class="field">
+              <label for="telefon" data-i18n="contact.field_phone">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="07xx xxx xxx" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email" data-i18n="contact.field_email">Email</label>
+            <input type="email" id="email" name="email" placeholder="adresa@email.com" required>
+          </div>
+          <div class="field">
+            <label for="serviciu" data-i18n="contact.field_service">Serviciu dorit</label>
+            <select id="serviciu" name="serviciu">
+              <option data-i18n="contact.option_sprancene">Sprâncene</option>
+              <option data-i18n="contact.option_gene">Gene</option>
+              <option data-i18n="contact.option_buze">Buze</option>
+              <option data-i18n="contact.option_eyeliner">Eyeliner</option>
+              <option data-i18n="contact.option_other">Nu știu încă — vreau o consultație</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="mesaj" data-i18n="contact.field_message">Mesaj</label>
+            <textarea id="mesaj" name="mesaj" data-i18n-placeholder="contact.field_message_placeholder" placeholder="Spune-mi câteva detalii despre ce îți dorești..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;" data-i18n="contact.form_submit">Trimite cererea de programare</button>
+          <p class="form-success" style="display:none; color:var(--color-rose-dark); margin-top:16px; font-weight:600;" data-i18n="contact.form_success">Mulțumim! Te vom contacta în curând.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Atelier by Daniela</div>
+        <p data-i18n="common.footer_desc">Studio de dermopigmentare dedicat trăsăturilor naturale și armonioase — sprâncene, gene, buze și eyeliner realizate cu precizie, igienă și grijă, pentru femei și bărbați deopotrivă.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="TikTok">TT</a>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="common.footer_services_title">Servicii</h4>
+        <ul>
+          <li><a href="sprancene.html" data-i18n="nav.sprancene">Sprâncene</a></li>
+          <li><a href="gene.html" data-i18n="nav.gene">Gene</a></li>
+          <li><a href="buze.html" data-i18n="nav.buze">Buze</a></li>
+          <li><a href="eyeliner.html" data-i18n="nav.eyeliner">Eyeliner</a></li>
+          <li><a href="galerie.html" data-i18n="nav.galerie">Galerie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="common.footer_studio_title">Studio</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Acasă</a></li>
+          <li><a href="preturi.html" data-i18n="nav.preturi">Prețuri</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="common.footer_contact_title">Contact</h4>
+        <p>0722 864 903<br>studioatelierdaniela@gmail.com<br>Popești Leordeni, Strada Biruinței 30-57, bloc 3, scara 1, parter<br><span data-i18n="common.footer_schedule">Luni–Sâmbătă: 10.00–20.00</span></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="common.footer_rights">© 2026 Atelier by Daniela — Studio de Dermopigmentare. Toate drepturile rezervate.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n-data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
